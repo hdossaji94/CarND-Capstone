@@ -11,6 +11,7 @@ from light_classification.tl_classifier import TLClassifier
 import tf
 import cv2
 import yaml
+import math
 from scipy.spatial import KDTree
 
 STATE_COUNT_THRESHOLD = 3
@@ -127,8 +128,7 @@ class TLDetector(object):
         return light.state
 
         #if(not self.has_image):
-            #self.prev_light_loc = None
-            #return False
+            ##return False
 
         #cv_image = self.bridge.imgmsg_to_cv2(self.camera_image, "bgr8")
 
